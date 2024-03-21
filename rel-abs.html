@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative & Absolute Properties of Position</title>
+
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+   
+   
+    <!-- Grid Styling -->
+    <style>
+         .child1 {
+            grid-area: head;
+            /* grid-column-start: 4;
+            grid-row-start: 3; */
+        }
+
+        .child2 {
+            grid-area: right;
+        }
+
+        .child3 {
+            grid-area: left;
+        }
+
+        .child4 {
+            grid-area: foot;
+        }
+
+        .child5 {
+            grid-area: last;
+        }
+
+        .grid {
+            display: grid;
+            /* width: 100vw; */
+            height: max-content;
+            /* grid-template-columns: auto auto auto auto; */
+            grid-template-areas:
+                "head head head"
+                "right left left"
+                "foot foot last";
+
+
+            /* gap: 20px; */
+            gap: 20px;
+
+
+            /* display: flex;
+            flex-direction: row;
+            gap: 20px;
+            flex-wrap: wrap; */
+        }
+
+        .child {
+            height: 100px;
+            /* width: 200px; */
+            background-color: rgb(212, 152, 77);
+        }
+
+
+        .h3_grid {
+            position: relative;
+            left: 30px;
+        }
+
+        .h2_grid {
+
+            background-color: #ab1a1a;
+            margin: 0;
+            padding: 20px;
+
+            position: sticky;
+            top: 100px;
+        }
+    </style>
+
+    <!-- Relative & absolute styling -->
+    <style>
+        .realtiveChild {
+            position: relative;
+            top: 50px;
+            right: 100px;
+        }
+        .section {
+            padding: 100px;
+        }
+        .relativeParent {
+            position: relative;
+        }
+        .absoluteChild {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+
+    </style>
+
+    <!-- Card Styling -->
+    <style>
+        .card {
+            height: 300px;
+            width: 200px;
+            background-color: antiquewhite;
+            position: relative;
+        }
+        .card div.card-icon-div {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            height: 25px;
+            width: 25px;
+            background-color: #ab1a1a;
+
+            position: absolute;
+            top: -10px;
+            left: 10px;
+            
+        }
+        .card i.card-icon {
+            color: white;
+        }
+        .card h2 {
+            padding: 20px;
+        }
+
+        .card p {
+            transition: all 1000ms ease-in 100ms;    
+        
+        }
+        .card:hover p {
+            color: #fff;
+            background-color: blue;
+            border-radius: 10px;
+            padding: 50px;
+            width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3 class="h3_grid">Grid Property Container 3</h3>
+    <div class="card">
+        <div class="card-icon-div">
+            <i class="fa fa-facebook card-icon"></i>
+        </div>
+        <h2>this is a card</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam voluptatibus eaque pariatur cum, maxime distinctio minima accusantium iure? Est ratione praesentium tempora vero consequatur odit nostrum unde quasi nesciunt eaque.</p>
+    </div>
+
+
+
+
+    <section class="section">
+        <div class="grid relativeParent">
+            <div class="child child1">
+                <p>Lorem, Child1</p>
+            </div>
+            <div class="child child2">
+                <p>Lorem, ipsum.</p>
+            </div>
+            <div class="child child3">
+                <p>Position Static element.</p>
+                <p class="absoluteChild">Position Absolute element.</p>
+            </div>
+            <div class="child child4">
+                <p>Lorem, ipsum.</p>
+            </div>
+            <div class="child child5 realtiveChild">
+                <p>Position Relative element.</p>
+            </div>
+        </div>
+    </section>
+
+    <h3 class="h3_grid">Grid Property Container 3</h3>
+    <div class="grid">
+        <div class="child child1">
+            <p>Lorem, Child1</p>
+        </div>
+        <div class="child child2">
+            <p>Lorem, ipsum.</p>
+        </div>
+        <div class="child child3">
+            <p>Lorem, ipsum.</p>
+        </div>
+        <div class="child child4">
+            <p>Lorem, ipsum.</p>
+        </div>
+        <div class="child child5 ">
+            <p>Lorem, ipsum.</p>
+        </div>
+    </div>
+    
+</body>
+</html>
