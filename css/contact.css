@@ -1,0 +1,97 @@
+/* Start of CONTACT-SECTION */
+
+#contact {
+  width: 100%;
+}
+.contact-text {
+  margin: 100px;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+}
+
+.contact-text>h1 {
+  font-size: 36px;
+  letter-spacing: 4px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.contact-text>p {
+  line-height: 25px;
+}
+
+.ink-color {
+  font-size: 18px;
+  font-weight: bolder;
+  color: #607d8b;
+}
+
+/* Starting of CONTACT-FORM */
+.contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contact-form form {
+  width: 90%;
+}
+
+/* Style the form inputs */
+#user-name,
+#user-range,
+#user-date,
+#user-msg {
+  padding: 10px;
+  width: 80vw;
+  margin-bottom: 50px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-family: "Times New Roman", Georgia, Serif;
+  font-size: 18px;
+}
+
+/* Style the submit button */
+.button {
+  background-color: #dcd9d9;
+  padding: 10px 20px;
+  border: none;
+  font-family: "Times New Roman", Georgia, Serif;
+  font-size: 15px;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: var(--dark-gray);
+}
+
+/* Style the form submit page*/
+.form-submit {
+  margin: 30px 0px 0px 30px;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.form-submit h1 {
+  font-size: 2em;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.form-submit h2 {
+  color: #3c763d;
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.form-submit p {
+  background-color: #ffffcc;
+  border-left: 5px solid #ffeb3b;
+  height: 60px;
+  padding-top: 18px;
+  padding-left: 10px;
+}

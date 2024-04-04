@@ -1,0 +1,33 @@
+:root {
+    --white: #fff;
+    --dark-gray: #5c5858;
+}
+
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.flex {
+    display: flex;
+}
+
+.list-none {
+    list-style: none;
+}
+
+/* 
+Breakpoints
+
+laptop sizes 1020, 920 720, 668
+
+
+mobile sizes 540px to 280
+*/

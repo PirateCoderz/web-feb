@@ -1,0 +1,19 @@
+/*Start of Homepage*/
+.hero-img {
+    background-image: url(/imgs/hamburger.jpg);
+    background-size: cover;
+    background-position: center;
+
+    height: 100vh;
+    position: relative;
+}
+
+.hero-text {
+    position: absolute;
+    bottom: 2rem;
+    left: 3rem;
+
+    font-size: 36px;
+    letter-spacing: 4px;
+    color: var(--dark-gray);
+}

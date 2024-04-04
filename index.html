@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>W3.CSS Template</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="icon" type="image/x-icon"
+    href="https://encrypted-tbn0.gstatic.com/favicon-tbn?q=tbn:ANd9GcTJAT_Em8u-_OLNZc_4w6xQ0vLDE-AW5CYcjPrDZKztNrL-rakyNieD3UbxUwBcQIYMXSENwKLyeQB8mu6K9fBrVJXfSXbICRy0FccqMmIK_iOwPubF">
+
+    <!-- CSS Files -->
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/hero.css">
+  <link rel="stylesheet" href="/css/about.css">
+  <link rel="stylesheet" href="/css/menu.css">
+  <link rel="stylesheet" href="/css/contact.css">
+  <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+  <section id="homepage">
+    <header>
+
+      <div class="nav-bar"> <!-- Main Container of nav-bar flex-items. -->
+
+        <!-- First: starting logo. -->
+        <div class="nav-logo">
+          <a href="#homepage">Gourmet au Catering</a>
+        </div>
+
+        <div class="header-logo">
+          <p>Logo</p>
+        </div>
+
+        <div class="togglebtn">
+          <i class="fa fa-bars"></i>
+        </div>
+        <!-- Right side nav-bar -->
+        <nav class="right-navbar">
+          <!-- Second: about-section. -->
+          <div class="nav-about">
+            <a href="#about">About</a>
+          </div>
+          <!-- Third: menu-section. -->
+          <div class="nav-menu">
+            <a href="#menu">Menu</a>
+          </div>
+          <!-- Forth: contact-section. -->
+          <div class="nav-contact">
+            <a href="#contact">Contact</a>
+          </div>
+        </nav> <!-- Ending tag of right side nav-bar -->
+
+      </div> <!-- Ending tag of nav-bar main Container-->
+
+    </header>
+
+  </section>
+
+  <main>
+    <!-- Starting background hero-image-->
+    <div class="hero-img">
+      <p class="hero-text">Le Catering</p>
+    </div>
+
+<div id="about">  <!-- Start of ABOUT-SECTION-->
+
+  <div class="left-side">
+    <img src="/imgs/tablesetting2.jpg" alt="left-img">
+  </div>
+
+  <div class="right-text"> <!-- Start of RIGHT-SIDE TEXT-->
+    <h1>About Catering</h1>
+    <h3>Tradition Since 1889</h3>
+    <p>
+      The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit
+      consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+      iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use
+      <span class="colored-bg">seasonal</span> ingredients.
+    </p>
+        <br>
+    <p class="second-para">
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+      mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      ommodo consequat. 
+    </p>
+  </div>  <!-- End of RIGHT-SIDE TEXT-->
+
+</div>    <!-- End of ABOUT-SECTION-->
+
+<hr class="hr">
+ 
+<div id="menu"> <!-- Start of MENU-SECTION-->
+  <div class="menu-text"> <!-- Start of MENU-TEXT-->
+
+    <h1>Our Menu</h1>
+    <h3>Bread Basket</h3>
+    <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+
+    <h3>Honey Almond Granola with Fruits</h3>
+    <p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+
+    <h3>Belgian Waffle</h3>
+    <p>Vanilla flavored batter with malted flour 7.50</p> 
+
+    <h3>Scrambled eggs</h3>
+    <p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+
+    <h3>Blueberry Pancakes</h3>
+    <p>With syrup, butter and lots of berries 8.50</p>
+
+  </div>
+
+  <div class="menu-img"> <!-- Start of MENU-IMAGE-->
+    <img src="/imgs/tablesetting.jpg" alt="menu-img">
+  </div> <!-- End of MENU-IMAGE-->
+
+</div> <!-- End of MENU-SECTION-->
+ <br>
+<hr class="hr">
+  </main>
+
+  <footer>
+<!--    Start of CONTACT-SECTION -->
+      <div id="contact">
+        <div class="contact-text">
+          
+          <h1>Contact</h1>
+          <p>
+            We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.
+          </p> 
+          <br>
+          <p class="ink-color">Catering Service, 42nd Living St, 43043 New York, NY</p>
+          <br>
+          <p>
+            You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:
+          </p>
+          
+        </div>
+ 
+           <div class="contact-form">
+            <form action="./form-submit.html">
+              <input type="text" name="name" id="user-name" placeholder="Name" title="Please fill in this field" required>
+
+              <input type="number" name="range" id="user-range" placeholder="How many people" title="Please fill in this field" required>
+
+              <input type="date" name="date-picker" id="user-date" required>
+
+              <input type="text" name="message" id="user-msg" placeholder="Message \ Special requirements" title="Please fill in this field" required>
+              <button type="submit" class="button">SEND MESSAGE</button>
+            </form>
+           </div>  <!--   Ending tag of CONTACT-FORM -->
+
+      </div>  <!--    Ending tag of CONTACT-SECTION -->
+
+  </footer>
+
+</body>
+
+</html>
