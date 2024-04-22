@@ -1,0 +1,12 @@
+:root {
+
+    --width: 30px;
+}
+
+.home {
+    width: var(--width);
+}
+
+.Home {
+    
+}
