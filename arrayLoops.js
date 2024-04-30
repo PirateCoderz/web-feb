@@ -65,8 +65,8 @@ i = 0;
 
 // for (const key in fruits) {
 //     console.log(key)
-    
-    // }
+
+// }
 // }
 
 
@@ -78,9 +78,8 @@ let fruitObj = {
 
 // for (const iterator of fruitObj) {
 //     console.log(iterator);
-    
-// }
 
+// }
 
 // fruits.forEach((n) => {
 //     console.log(n);
@@ -90,15 +89,89 @@ let fruitObj = {
 
 
 // filter method for array
-
-
-let filtered = fruits.filter( (n) => n == 'Melon'
+let filtered = fruits.filter((n) => n == 'Melon'
 )
 
 
+let arr = [
+    [
+        "apple",
+        "banana",
+        "grapes",
+        "mango",
+        "melon"
+    ],
+    [
+        200,
+        100,
+        150,
+        200,
+        250
+    ],
+]
+
+let numbers = [
+    200,
+    100,
+    150,
+    200,
+    250
+];
+
+let collection = 0;
+let coll = [];
+
+for (const i of arr) {
+    console.log(i);
+    for (const j of i) {
+        if (j < 200) {
+            collection = collection + j;
+            coll.push(j);
+            console.log(j);
+        }
+    }
+}
+
+console.log(collection);
+console.log(coll);
+
+let obj = {
+    key: "value",
+    index: 1,
+    fruit: function datamanip() {
+
+    }
+};
+
+console.log(obj.fruit());
+
+// Array methods/functions
+// foreach map filter reduce
+
+// function functionName
+
+arr.forEach((i) => {i.forEach((j)=> { console.log(j)}); });
+
+const name = (params) => {
+
+}
 
 
+arr.map((k) => {
+    console.log(k)
+});
+
+// let filtering =  arr.map((i)=>{
+//     i.filter((j)=>{
+//         return (j < 200);
+//     }
+// )})
 
 
+let finter = numbers.filter((i) => { return i < 200})
 
-// Why for of loop is not working correctly on objects
+console.log(finter);
+
+name(10);
+
+// Assignment revise these methods. also watch DOM creation DOM Manipulation.
