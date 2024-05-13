@@ -56,8 +56,8 @@ i++;  // increment
     
     array2[0] = 25;
     
-    // console.log(array)
-    // console.log(array2);
+    console.log(array);
+    console.log(array2);
     
     array2 = [25, 16];
     
@@ -66,10 +66,11 @@ i++;  // increment
     let f = 15;
     let g = "15";
 
-    console.log(f)
-    console.log(g)
+    console.log(f);
+    console.log(g);
 
-    console.log(f === g);
+    console.log(f ==  g)
+    console.log(f === +g);
 
     
     // console.log(array);
