@@ -17,6 +17,20 @@ let data = null;
 
 // returns a promise
 
+
+let data4 = [
+    {
+        name:"Ali",
+        class: "5th",
+        roll: 10
+    },
+    {
+        name: "Ahmad",
+        class: "8th",
+        roll: 4.44
+    }
+]
+
 let countValue = new Promise(function (resolve, reject) {
     setTimeout(() => {
         resolve("Promise resolved");
