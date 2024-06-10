@@ -1,0 +1,25 @@
+{
+    "StudentsData":[
+        {
+            "id": 1,
+            "name":"Ali",
+            "class": "5th",
+            "roll": 10
+        },
+        {
+            "id": 2,
+            "name": "Ahmad",
+            "class": "8th",
+            "roll": 4.44
+        }
+    ],
+    "TeachersData": [
+        {
+            "id": 1,
+            "name": "Ahsan",
+            "field": "Web Dev",
+            "Qualification": "Masters"
+        }
+    ]
+
+}
