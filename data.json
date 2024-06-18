@@ -1,5 +1,5 @@
 {
-    "StudentsData":[
+    "result": {"StudentsData":[
         {
             "id": 1,
             "name":"Ali",
@@ -20,6 +20,7 @@
             "field": "Web Dev",
             "Qualification": "Masters"
         }
-    ]
-
+    ]},
+    "status": 200,
+    "success": true
 }

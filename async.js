@@ -2,8 +2,8 @@ let data1 = null;
 
 
 function setData() {
-    console.log("Data is Strored");
     data1 = "My Data";
+    console.log("Data is Strored");
 }
 
 function getData () {
@@ -19,19 +19,6 @@ console.log("Data1: " + data1);
 setTimeout(getData, 5010)
 
 console.log("Data2: " + data1);
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -52,7 +39,7 @@ console.log("Data2: " + data1);
 
 // function executed(params) {
 //     console.log("function is executed");
-//     // getting an video from internet 
+    // getting an video from internet 
 
 //     console.log("Video is playing")
 
@@ -78,21 +65,22 @@ console.log("Data2: " + data1);
 //     }
 // ]
 
+let data = null;
 
-// let countValue = new Promise(function (resolve, reject) {
-//     setTimeout(() => {
-//         resolve("Promise resolved");
-//         console.log(data);
-//         data = "Promise Data";
-//     }, 2000);
-// }).then(function successValue(result) {
-//     console.log(result);
-//     console.log(data)
-// })
+let countValue = new Promise(function (resolve, reject) {
+    setTimeout(() => {
+        resolve("Promise resolved");
+        console.log(data);
+        data = "Promise Data";
+    }, 2000);
+}).then(function successValue(result) {
+    console.log(result);
+    console.log(data)
+})
 
-//     .then(function successValue1() {
-//         console.log("You can call multiple functions this way.");
-//     });
+    .then(function successValue1() {
+        console.log("You can call multiple functions this way.");
+    });
 
 
 

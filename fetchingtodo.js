@@ -1,13 +1,25 @@
+const { retry } = require("async");
 
 
+function gettingData() {
+    return fetch('https://jsonplaceholder.typicode.com/todos');
+}
 
 
 let fetchingData = async () => {
-    let data2 = await fetch('https://jsonplaceholder.typicode.com/todos');
+    
+    try {
+
+   
+    let data2 = await gettingData(); 
+
 
     data2 = await data2.json();
-    // console.log(data)
     return data2;
+
+    } catch(e) {
+         return "Error While fetching data";
+    }
 }
 
 
@@ -15,11 +27,20 @@ async function fetching () {
 
     let data = await fetchingData();
 
-console.log("Data: ");
-console.log(data[0]);
+    if(data.success == true) {
+        console.log("Data: ");
+        console.log(data[0]);
+    } else {
+        console.log("Data Not Found")
+    }
 }
 
 fetching();
+
+fetch('https://jsonplaceholder.typicode.com/todos', {
+    type: post,
+    body: data
+})
 
 // getText("https://jsonplaceholder.typicode.com/todos/");
 
