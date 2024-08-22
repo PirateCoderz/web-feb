@@ -1,0 +1,18 @@
+{
+  "name": "pdf-generator",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "description": "This website will create pdfs from word documents",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "PirateCoderz",
+  "license": "ISC",
+  "dependencies": {
+    "i": "^0.3.7",
+    "libreoffice": "^0.4.5",
+    "libreoffice-convert": "^1.5.1",
+    "npm": "^10.8.1"
+  }
+}
